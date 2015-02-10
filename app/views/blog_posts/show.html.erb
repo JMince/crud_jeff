@@ -5,5 +5,5 @@
 <br/>
 <%= @blog_post.content %>
 <%= link_to 'Edit', edit_blog_post_path(@blog_post) %>
-<%= link_to 'Delete', blog_post_path(@blog_post), method: :delete %>
+<%= link_to 'Delete', blog_post_path(@blog_post), method: :delete, data: {confirm: 'Really? For Reals?'} %>
 <br/>

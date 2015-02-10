@@ -3,6 +3,7 @@
     <p><%= link_to blog_post.title, blog_post_path(blog_post) %></p>
     <p><%= blog_post.author %></p>
     <p><%= blog_post.content %></p>
+    <%= link_to 'Delete', blog_post_path(blog_post), method: :delete, data: {confirm: 'Really? For Reals?'} %>
 </div>
 <hr>
 <% end %>
